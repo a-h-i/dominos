@@ -1,5 +1,5 @@
 
-list(APPEND SRCS utils.cpp)
+list(APPEND SRCS board.cpp)
 list(APPEND TEST_SRCS test/test.cpp)
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
