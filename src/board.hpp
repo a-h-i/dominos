@@ -19,4 +19,5 @@ private:
   std::vector<card_ptr_t> pile;
 public:
   Board();
+  card_ptr_t drawCard();
 };

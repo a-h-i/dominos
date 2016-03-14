@@ -4,9 +4,11 @@ set(EXECUTABLE_NAME "dominos")
 set(TEST_EXEC_NAME "dominos-tests")
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang" OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" )
     ADD_DEFINITIONS(
-        -std=c++11
+        -std=c++14
         -Wall
         -Wextra
+        -DwxUSE_GUI=1
+        -fPIC
         )
     # Yes discard default values
     set(CMAKE_CXX_FLAGS_RELEASE "-flto -O3 -march=native -fmerge-all-constants -fgcse-sm -fgcse-las")

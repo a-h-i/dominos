@@ -1,6 +1,8 @@
+#include <wx/wxprec.h>
+#ifndef WX_PRECOMP
+   #include <wx/wx.h>
+#endif
+#include "dominos_app.hpp"
 
 
-int main(int argc, char const *argv[]) {
-  /* code */
-  return 0;
-}
+IMPLEMENT_APP(DominosApp);

@@ -1,10 +1,11 @@
 #pragma once
 #include "board.hpp"
 #include <memory>
+#include <string>
 class Player {
-private:
-  std::vector<card_ptr_t> hand;
 public:
-  Player();
-  void add_card(card_ptr_t c) {hand.push_back(c);}
+  std::vector<card_ptr_t> hand;
+  const std::string name;
+  Player(const std::string &name);
+  void addCard(card_ptr_t c) {hand.push_back(c);}
 };
